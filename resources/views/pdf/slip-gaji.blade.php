@@ -401,7 +401,7 @@
     </table>
     <table class="no-border">
         <tr>
-            <td width="70%" align="right">Dibuat Oleh<br><br><br>Sayid Adam Kaharianto</td>
+            <td width="70%" align="right">Diverifikasi Oleh<br><br><br>Johanes Situmorang</td>
         </tr>
     </table>
 </body>

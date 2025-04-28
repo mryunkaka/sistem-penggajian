@@ -36,6 +36,75 @@ Setelah data absensi diproses, sistem akan menghitung gaji karyawan berdasarkan 
 
 ---
 
+## ⚙️ Proses Instalasi
+
+Ikuti langkah-langkah berikut untuk menginstal dan menjalankan proyek ini di lokal Anda:
+
+1. **Clone Repository**
+
+    ```bash
+    git clone https://github.com/username/sistem-penggajian-otomatis.git
+    cd sistem-penggajian-otomatis
+    ```
+
+2. **Install Dependency PHP**
+
+    ```bash
+    composer install
+    ```
+
+3. **Copy File Environment**
+
+    ```bash
+    cp .env.example .env
+    ```
+
+4. **Generate Application Key**
+
+    ```bash
+    php artisan key:generate
+    ```
+
+5. **Atur Konfigurasi Database**
+
+    - Edit file `.env` dan sesuaikan bagian berikut:
+        ```plaintext
+        DB_DATABASE=nama_database
+        DB_USERNAME=username_database
+        DB_PASSWORD=password_database
+        ```
+
+6. **Jalankan Migrasi Database**
+
+    ```bash
+    php artisan migrate
+    ```
+
+7. **(Opsional) Jalankan Seeder**
+   Jika ada data awal yang perlu diisi:
+
+    ```bash
+    php artisan db:seed
+    ```
+
+8. **Build Frontend (Jika Ada menggunakan Vite)**
+
+    ```bash
+    npm install
+    npm run dev
+    ```
+
+9. **Jalankan Server Laravel**
+
+    ```bash
+    php artisan serve
+    ```
+
+10. **Akses Aplikasi**
+    - Buka browser Anda dan akses: [http://localhost:8000](http://localhost:8000)
+
+---
+
 ## 📋 Cara Menggunakan
 
 1. **Persiapkan File Absensi**:
@@ -54,6 +123,7 @@ Setelah data absensi diproses, sistem akan menghitung gaji karyawan berdasarkan 
     - Periksa hasil perhitungan untuk memastikan semuanya sesuai.
 
 4. **Hasilkan Laporan**:
+
     - Unduh laporan bulanan dan slip gaji untuk setiap karyawan.
 
 ---
@@ -65,7 +135,7 @@ Jika Anda memiliki pertanyaan atau ingin berdiskusi lebih lanjut tentang proyek 
 -   **Nama**: Sayid Adam Kaharianto
 -   **Asal**: Kotabaru, Kalimantan Selatan
 -   **Email**: mryunkaka@gmail.com
--   **LinkedIn**: https://www.linkedin.com/in/saidadam/
+-   **LinkedIn**: [LinkedIn Sayid Adam](https://www.linkedin.com/in/saidadam/)
 
 ---
 
